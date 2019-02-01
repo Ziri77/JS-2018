@@ -106,9 +106,9 @@ angular.module('myApp.controllers').controller('teacherCtrl',
 
             $scope.saveTest = function(test) {
                 $http({
-                    url: $rootScope.DATA + '/groups',
+                    url: URL + '/tests',
                     method: 'POST',
-                    data: JSON.stringify(g),
+                    data: JSON.stringify(testDozapisania),
                     params: {
                         wdauth: $rootScope.R.wdauth
                     }
